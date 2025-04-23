@@ -5,9 +5,11 @@ import Home from "./Components/home";
 import Projects from "./Components/projects";
 import About from "./Components/about";
 import Footer from "./Components/footer";
+import Mode from "./Components/mode";
 
 function App() {
-  return (
+  return (<>
+    <Mode />
       <Routes>
         <Route path="/" element={
           <>
@@ -23,6 +25,7 @@ function App() {
           </>
         } />
       </Routes>
+      </>
   );
 }
 
