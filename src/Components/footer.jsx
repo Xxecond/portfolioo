@@ -1,8 +1,5 @@
-import React from "react";
-
-const Footer =()=>{
+const Footer =()=>{ 
     return(<>
-    <hr />
     <footer id="foot">&copy; AndrewsAmpadu2024 | All Rights Reserved</footer>;
     </>)
 }

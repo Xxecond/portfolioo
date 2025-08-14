@@ -1,8 +1,7 @@
-import React from "react";
 import { useParams, Link } from "react-router-dom";
-import blogger from "../assets/block.jpg";
-import restaurant from "../assets/tiger.jpg";
-import portfolio from "../assets/black.jpg";
+import blogger from "../assets/bbg.jpg";
+import restaurant from "../assets/rrt.jpg";
+import portfolio from "../assets/poo.jpg";
 
 const Preview = () => {
   const { id } = useParams();
@@ -15,11 +14,11 @@ const Preview = () => {
       description: "A user-friendly platform that allows you to create, read, update and delete blog posts.Built with React and Vite, with a clean and responsive UI.",
       liveLink: "https://xxecond.github.io/blogger",
     },
-    2: {
+2: {
       title: "Restaurant Website",
       image: restaurant,
       description: "A user-friendly platform that allows customers to browse a menu, view detailed food items and place orders.Built with React and Vite, and ideal for showcasing restaurant dishes online.",
-      liveLink: "https://xxecond.github.io/restaurant/",
+      liveLink:"https://xxecond.github.io/restaurant/",
     },
     3: {
       title: "Portfolio Website",
@@ -45,9 +44,9 @@ const Preview = () => {
         <p className="project-description">{project.description}</p>
           <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="live-link">
             View Live
-          </a>
+            </a>
       <Link to="/projects" className="back-btn">
-        PROJECTS
+        BACK
       </Link>
     </div>
   );

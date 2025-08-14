@@ -1,14 +1,16 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
     font-size: 67%;
     font-family: tahoma;
     scroll-behavior: smooth;
-    color-scheme: light;
+    color-scheme: dark;
 }
 
 body {
@@ -16,11 +18,10 @@ body {
     background-color: black;
     color: white;
     overflow-x: hidden;
-margin:0;
+    margin: 0;
 }
 
-
-#home {
+#home, #home-2 {
     background-color: #333333;
     color: #ffff;
     padding: 0.8rem;
@@ -37,8 +38,8 @@ margin:0;
 }
 
 #top h4 {
-    padding-right: 30rem;
     font-size: 2.5rem;
+    flex-grow: 1;
 }
 
 .design {
@@ -50,7 +51,7 @@ margin:0;
 
 #top li:first-of-type a {
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: red;
     text-decoration-line: underline;
 }
@@ -78,7 +79,7 @@ margin:0;
 }
 
 #top li a:hover {
-    font-weight: bold;
+    font-weight: bolder;
     color: red;
 }
 
@@ -114,7 +115,7 @@ margin:0;
     font-family: times;
     overflow: hidden;
     white-space: nowrap;
-    flex: 1;
+
     width: 0;
     border-right: 0.1rem solid black;
     animation: typewriter 4s steps(25, end)1s forwards, colorChange 10s infinite;
@@ -163,109 +164,119 @@ h2 {
 }
 
 .projects {
-    font-size: 5rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
 }
 
 #project-container {
     display: flex;
-  justify-content: center;
+    justify-content: center;
     flex-wrap: wrap;
     overflow: hidden;
-    gap: 5rem 15rem;
-animation: slideIn 5s steps(25, end) forwards;
+    gap: 4rem 20rem;
+    animation: slideIn 5s steps(25, end) forwards;
 }
 
 #project-container a {
     text-decoration: none;
     color: inherit;
-  }
-  
+}
+
 
 @keyframes slideInLeft {
     from {
-      transform: translateX(-100%);
-      opacity: 0;
+        transform: translateX(-100%);
+        opacity: 0;
     }
+
     to {
-      transform: translateX(0);
-      opacity: 1;
+        transform: translateX(0);
+        opacity: 1;
     }
-  }
-  
-  @keyframes slideInRight {
+}
+
+@keyframes slideInRight {
     from {
-      transform: translateX(100%);
-      opacity: 0;
+        transform: translateX(100%);
+        opacity: 0;
     }
+
     to {
-      transform: translateX(0);
-      opacity: 1;
+        transform: translateX(0);
+        opacity: 1;
     }
-  }
-
-  
-  @keyframes slideInTop{
-  from{transform:translateY(-100%);
-    opacity: 0;
-  }  
-to{transform:translateY(0);
-opacity: 1;}   
 }
 
-  @keyframes slideInBottom{
- from{ 
-    transform:translateY(100%);
-    opacity: 0;
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
-to{
-    transform: translateY(0);
-opacity: 1;}
-  }
-  
-  .Sleft {
+
+@keyframes slideInBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.Sleft {
     animation: slideInLeft 2s ease forwards;
-  }
-  
-  .Sright {
-    animation: slideInRight 2s ease forwards;
-  }
-  
-  .Stop{
-    animation: slideInTop 2s ease forwards;
-  }
-  .Sbottom{
-   animation: slideInBottom 2s ease forwards;
-  }
+}
 
-  .tap-text {
+.Sright {
+    animation: slideInRight 2s ease forwards;
+}
+
+.Stop {
+    animation: slideInTop 2s ease forwards;
+}
+
+.Sbottom {
+    animation: slideInBottom 2s ease forwards;
+}
+
+.tap-text {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
-  }
-  
-  .project-name {
+}
+
+.project-name {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
-  }
-  
+}
+
 .project-box {
     flex-basis: 30%;
     justify-content: center;
     display: flex;
-    width: 58vh;
-    height:45vh;
+    width: 45vh;
+    height: 38vh;
     background-color: black;
-    color:white;
+    color: white;
     align-items: center;
     border-radius: 2rem;
     overflow: hidden;
     text-decoration: none;
     border: 0.4rem solid white;
 }
+
 .preview-container {
     height: 100vh;
     display: flex;
@@ -275,60 +286,61 @@ opacity: 1;}
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
-  }
-  
-  .preview-container h4 {
+}
+
+.preview-container h4 {
     padding: 5px;
     font-size: 2rem;
     margin-bottom: 10px;
-  }
-  
-  .preview-img {
+}
+
+.preview-img {
     margin: 20px 0;
     max-height: 50vh;
     max-width: 100%;
     object-fit: contain;
-  }
-  
-  .project-description {
+}
+
+.project-description {
     font-size: 2.2rem;
     max-width: 800px;
     margin: 20px auto;
     line-height: 1.6;
-  }
-  
-  .live-link, .back-btn {
+}
+
+.live-link,
+.back-btn {
     display: inline-block;
     padding: 12px 24px;
     margin: 15px;
     text-decoration: none;
     border-radius: 4px;
     transition: all 0.3s ease;
-  }
-  
-  .live-link {
+}
+
+.live-link {
     background: #007bff;
     color: white;
     font-size: 1.2rem;
-  }
-  
-  .back-btn {
+}
+
+.back-btn {
     background: #6c757d;
     color: white;
     font-size: 1.2rem;
-  }
-  
-  .live-link:hover {
+}
+
+.live-link:hover {
     background: #0056b3;
     transform: translateY(-2px);
-  }
-  
-  .back-btn:hover {
+}
+
+.back-btn:hover {
     background: #5a6268;
     transform: translateY(-2px);
-  }
+}
 
-.image{
+.image {
     font-size: 2rem;
     display: flex;
     height: 45vh;
@@ -359,7 +371,7 @@ opacity: 1;}
     gap: 2.3rem;
     justify-content: center;
     margin-top: 1rem;
-    animation:bounce 2.5s ease-in forwards;
+    animation: bounce 2.5s ease-in forwards;
 }
 
 #media li a {
@@ -368,12 +380,16 @@ opacity: 1;}
     font-size: 5.5rem;
 }
 
-@keyframes bounce{   
-from {opacity: 0;
+@keyframes bounce {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
-to{opacity:1;
-}
-}
+
 #media li a:hover {
     color: cyan;
 }
@@ -391,27 +407,29 @@ to{opacity:1;
 }
 
 #foot {
-    position:fixed;
-    bottom:0;
-  font-size: 1.6rem;
-  min-height: 7vh;
-  color: white;
-  background-color: #333;
-  width: 100%;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    font-size: 1.6rem;
+    min-height: 7vh;
+    color: white;
+    background-color: #333;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
 }
 
- hr {
-    width:100%;
-    border-top:1px solid white ;
-    position: fixed;
-    z-index: 1;
-    bottom: 5rem;
+#foot::before{
+content:'';
+position: absolute;
+top:0;
+width:100%;
+height: 2px;
+background-color: white;
 }
+
 
 button a {
     text-decoration: none;
@@ -453,33 +471,41 @@ button a:hover::after {
 .theme-toggle {
     position: fixed;
     left: 0;
-    top: -15px; 
+    top: -15px;
     font-size: 2.5rem;
     list-style: none;
     animation: pulseText 10s infinite;
-    z-index: 1000; 
-    background: transparent; 
-    border: none; 
+    z-index: 1000;
+    background: transparent;
+    border: none;
     cursor: pointer;
     padding: 5px;
-  }
-  
-  @keyframes pulseText {
-    0%, 100% {
-      font-size: 1.3rem;
+}
+
+@keyframes pulseText {
+
+    0%,
+    100% {
+        font-size: 1.3rem;
     }
+
     50% {
-      font-size: 2.5rem;
+        font-size: 2.5rem;
     }
-  }
+}
+
 /*color-scheme*/
+
+.light-mode {
+    color-scheme: light;
+}
 
 .light-mode body {
     background-color: #fff;
     color: #000;
 }
 
-.light-mode #home {
+.light-mode #home, .light-mode #home-2 {
     background-color: #ffffff;
     color: #000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -508,7 +534,7 @@ button a:hover::after {
         radial-gradient(circle at 90% 80%, rgba(255, 165, 0, 0.5) 0%, rgba(255, 255, 255, 0) 60%),
         linear-gradient(to bottom, rgba(255, 165, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
     background-size: 100px 100px, 150px 150px, 10px 10px;
- }
+}
 
 .light-mode #text-content h1 {
     border-right-color: #000;
@@ -516,9 +542,17 @@ button a:hover::after {
 }
 
 @keyframes lightColorChange {
-    0% { color: black; }
-    50% { color: #373297; }
-    100% { color: rgb(19, 19, 152); }
+    0% {
+        color: black;
+    }
+
+    50% {
+        color: #373297;
+    }
+
+    100% {
+        color: rgb(19, 19, 152);
+    }
 }
 
 .light-mode #projects {
@@ -540,17 +574,17 @@ button a:hover::after {
 }
 
 .light-mode #media li a {
-    color:goldenrod;
+    color: goldenrod;
 }
 
 .light-mode #media li a:hover {
-    color:  #FFFf00;
+    color: #FFFf00;
 }
 
 .light-mode #foot {
     background-color: #fff;
- border-color:black;
-    color:#000
+    border-color: black;
+    color: #000
 }
 
 .light-mode button a {
@@ -564,18 +598,15 @@ button a:hover::after {
 .light-mode button a::after {
     background: #8a1814;
 }
-.light-mode .design{
+
+.light-mode .design {
     color: rgb(19, 19, 152)
 }
 
 
-.light-mode hr {
-
-    width:100%;
-    border-top:1px solid black ;
-    position: fixed;
-    z-index: 1;
-    bottom: 5rem;
+.light-mode #foot::before{
+content:'';
+background-color: black;
 }
 
 /*mobile screen styling */
@@ -583,203 +614,207 @@ button a:hover::after {
 
     #text-content h1 {
         font-size: clamp(1.9rem, 7vw, 5.5rem);
-    }   
-    
-.cont {
-    gap: 2rem;
-}
+    }
+
+    .cont {
+        gap: 2rem;
+    }
 
     #profile-pic {
         width: 45%;
         height: 76%;
         border-radius: 10%;
         object-fit: cover;
-    margin-top:40px;
+        margin-top: 40px;
     }
-    
-#top {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-    padding: 1rem;
-    height: 2.8rem;
-    text-align: center;
-}
 
-#top h4 {
-    padding-right: 8rem;
-    font-size: 2rem;
-}
+    #top {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+        padding: 1rem;
+        height: 2.8rem;
+        text-align: center;
+    }
+
+    #top h4 {
+        font-size: 2rem;
+    }
 
 
-.name{
-    font-size:2.2rem;
-}
-.design {
-    font-family: 'Comic Sans MS', 'Chalkboard', cursive;
-    font-size: 3rem;
-    padding-left: 5rem;
-    color: orange;
-}
+    .name {
+        font-size: 2.2rem;
+    }
 
-#top li:first-of-type a {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: red;
-    text-decoration-line: underline;
-}
+    .design {
+        font-family: 'Comic Sans MS', 'Chalkboard', cursive;
+        font-size: 3rem;
+        padding-left: 5rem;
+        color: orange;
+    }
 
-#top li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-    position: relative;
-}
+    #top li:first-of-type a {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: red;
+        text-decoration-line: underline;
+    }
 
-#project-container {
-    gap: 4rem;
-    overflow: hidden;
+    #top li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+        position: relative;
+    }
 
-}
+    #project-container {
+        gap: 4rem;
+        overflow: hidden;
+
+    }
+
     .project-box {
-        margin-top:1vh;
+        margin-top: 1vh;
         height: 38vh;
         width: 38vh;
-    font-size: 1rem;
-  }
+        font-size: 1rem;
+    }
 
-  .projects
-    {
-    font-size: 2rem;
-  }
+    .projects {
+        font-size: 2rem;
+    }
 
-  .image{
-    height: 38vh;
-    width: 40vh;
-    max-width: 45vh;
-    margin:  auto;
-    padding: 0 10px;
-}
+    .image {
+        height: 38vh;
+        width: 40vh;
+        max-width: 45vh;
+        margin: auto;
+        padding: 0 10px;
+    }
 
-button a {
-    font-size: 1.8rem;
-}
-
-
-#space {
-    min-height: 95vh;
-    width: 100vw;
-    background-color: gray;
-    text-align: center;
-    padding-top: 9rem;
-}
-
-#media {
-    font-size: 5rem;
-    list-style: none;
-    display: flex;
-    gap: 1.8rem;
-    justify-content: center;
-    margin-top: 0.5rem
-}
-
-#media li a {
-    color: blue;
-    transition: 0.4s;
-    font-size: 3.5rem;
-}
-
-.p-1 {
-    padding-top: 10rem;
-    font-size: 3.5rem;
-    font-weight: bold
-}
-
-.p-2 {
-    padding-top: 5rem;
-    padding-bottom: 2rem;
-    font-size: 2rem;
-}
-
-#foot {
-  font-size: 1rem;
-}
-
-}
+    button a {
+        font-size: 1.8rem;
+    }
 
 
-@media (max-width:500px){
-          
-          @keyframes pulseText {
-            0%, 100% {
-              font-size: 1rem;
-            }
-            50% {
-              font-size: 1.5rem;
-            }
-          }
-.cont {
-    gap: 1.5rem;
-}
- 
+    #space {
+        min-height: 95vh;
+        width: 100vw;
+        background-color: gray;
+        text-align: center;
+        padding-top: 9rem;
+    }
 
-#top h4 {
-    padding-right: 3.2rem;
-    font-size: 1.4rem;
+    #media {
+        font-size: 5rem;
+        list-style: none;
+        display: flex;
+        gap: 1.8rem;
+        justify-content: center;
+        margin-top: 0.5rem
+    }
+
+    #media li a {
+        color: blue;
+        transition: 0.4s;
+        font-size: 3.5rem;
+    }
+
+    .p-1 {
+        padding-top: 10rem;
+        font-size: 3.5rem;
+        font-weight: bold
+    }
+
+    .p-2 {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+    #foot {
+        font-size: 1rem;
+    }
+
 }
 
 
-#top li:first-of-type a {
-    font-size: 1.2rem;
-}
+@media (max-width:500px) {
 
-#top li a {
-    font-size: 1.2rem;
-}
+    @keyframes pulseText {
 
-#project-container {
-    gap: 2rem;
-}
+        0%,
+        100% {
+            font-size: 1rem;
+        }
+
+        50% {
+            font-size: 1.5rem;
+        }
+    }
+
+    .cont {
+        gap: 1.5rem;
+    }
+
+
+    #top h4 {
+        font-size: 1.4rem;
+    }
+
+
+    #top li:first-of-type a {
+        font-size: 1.2rem;
+    }
+
+    #top li a {
+        font-size: 1.2rem;
+    }
+
+    #project-container {
+        gap: 2rem;
+    }
 
     .project-box {
-        margin-top:1vh;
+        margin-top: 1vh;
         height: 25vh;
         width: 21vh;
-    font-size: 1rem;
-  }
+        font-size: 1rem;
+    }
 
-  .projects
-    {
-    font-size: 1.8rem;
-  }
+    .projects {
+        font-size: 1.8rem;
+    }
 
-  .image{
-    height: 25vh;
-    width: 22vh;
-    padding: 0 5px;
-}
+    .image {
+        height: 25vh;
+        width: 22vh;
+        padding: 0 5px;
+    }
 
-button a {
-    font-size: 1.5rem;
-}
-#space{
-    overflow:hidden;
-    padding-top:4rem;
-}
-#media li a {
-    color: blue;
-    transition: 0.4s;
-    font-size: 4.5rem;
-}
+    button a {
+        font-size: 1.5rem;
+    }
 
-.p-1 {
-    font-size: 2.4rem;
-}
+    #space {
+        overflow: hidden;
+        padding-top: 4rem;
+    }
 
-.p-2 {
-    font-size: 1.5rem;
-}
+    #media li a {
+        color: blue;
+        transition: 0.4s;
+        font-size: 4.5rem;
+    }
+
+    .p-1 {
+        font-size: 2.4rem;
+    }
+
+    .p-2 {
+        font-size: 1.5rem;
+    }
 
 
 }

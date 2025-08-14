@@ -1,9 +1,8 @@
-import React from "react";
 import { Link } from "react-router-dom";
 const About = () => {
     return (
         <>
-            <div className="section" id="about-me">
+            <div className="sectionz" id="about-me">
                 <div id="space" >
                     <p className="p-1">LET'S WORK TOGETHER.</p>
                     <p className="p-2">GET IN TOUCH:</p>

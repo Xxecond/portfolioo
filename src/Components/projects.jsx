@@ -1,6 +1,4 @@
-import React from "react";
 import { Link } from "react-router-dom";
-
 const Projects = () => {
     const projects = [
       { id: 1, name: "BLOGGER-APPLICATION", className: "Stop", text: "TAP TO VIEW" },
