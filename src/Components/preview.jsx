@@ -12,19 +12,19 @@ const Preview = () => {
       title: "Blogger Application",
       image: blogger,
       description: "A user-friendly platform that allows you to create, read, update and delete blog posts.Built with React and Vite, with a clean and responsive UI.",
-      liveLink: "https://xxecond.github.io/blogger",
+      liveLink: "https://blogger-git-main-xxeconds-projects.vercel.app/",
     },
 2: {
       title: "Restaurant Website",
       image: restaurant,
       description: "A user-friendly platform that allows customers to browse a menu, view detailed food items and place orders.Built with React and Vite, and ideal for showcasing restaurant dishes online.",
-      liveLink:"https://xxecond.github.io/restaurant/",
+      liveLink:"https://restaurant-git-main-xxeconds-projects.vercel.app/",
     },
     3: {
       title: "Portfolio Website",
       image: portfolio,
       description: "A showcase of my personal devlopment project, skills and contact info. users can view project and explore my tech stack.Built with React and vite, it's responsive and easy to navigate.",
-      liveLink: "https://xxecond.github.io/portfolio/",
+      liveLink: "https://portfolio-git-main-xxeconds-projects.vercel.app/",
     },
     4: {
       title: "Coming Soon",
