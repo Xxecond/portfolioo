@@ -158,7 +158,7 @@ h2 {
     height: 100vh;
     width: 100vw;
     padding: 2rem;
-    background-color: #008080;
+    background-color: #333;
     text-align: center;
     overflow: auto;
 }
@@ -359,7 +359,7 @@ h2 {
 #space {
     min-height: 95vh;
     width: 100vw;
-    background-color: gray;
+    background-color: #333;
     text-align: center;
     padding-top: 8rem;
 }
@@ -556,7 +556,7 @@ button a:hover::after {
 }
 
 .light-mode #projects {
-    background-color: #25bfb7;
+    background-color: white;
 }
 
 .light-mode .project-box {
@@ -701,7 +701,6 @@ background-color: black;
     #space {
         min-height: 95vh;
         width: 100vw;
-        background-color: gray;
         text-align: center;
         padding-top: 9rem;
     }
